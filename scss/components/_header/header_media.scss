@@ -1,0 +1,47 @@
+@media (max-width:992px){
+    
+    .header{
+        .container{
+            .row{
+                label{
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    color: #fff;
+                    background-color: $yellow;
+                    border-radius: 3px;
+                }
+                input{
+                    display: none;
+                    &:checked + nav{
+                        display:flex;
+                    }
+                }
+                nav{
+                    display: none;
+                    ul{ 
+                        flex-direction: column;
+                        li{ 
+                            &:first-child a{
+                                padding: 0;
+                                color: #919191;
+                                background-color: #fff;
+                                border-radius: none;
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+                            a{
+                                &:hover{
+                                background-color: $yellow;   
+                                padding: 1px 5px; 
+                                } 
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}

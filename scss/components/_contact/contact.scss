@@ -1,0 +1,65 @@
+main{
+    .contact {
+        background-color: $blue;
+        margin-bottom: 50px;
+        padding: 110px 0 400px;
+
+        h1, p, img{
+            text-align: center;
+            color: #fff;
+        }
+
+        h1{
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 12px;
+            font-weight: 400;
+            padding: 5px 0 25px;
+            position: relative;
+        }
+
+        form{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            input{
+                border: 0;
+                height: 40px;
+                border-radius: 3px;
+                transition: 0.5s;
+
+                &:hover {
+                    box-shadow: $shadow;
+                }
+
+                &::placeholder{
+                    padding-left: 20px;
+                    font-size: 13px;
+                }
+            }
+
+            button{
+                border: 0;
+                height: 40px;
+                @include button(0 30px, 14px);
+
+                &:hover{
+                    box-shadow: $shadow;
+                }
+            }
+        }
+
+        img{
+            width: 650px;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 350px;
+            left: calc(50% - 325px);
+        }
+    }
+}
