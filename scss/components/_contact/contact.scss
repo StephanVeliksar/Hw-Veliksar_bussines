@@ -29,8 +29,10 @@ main{
             input{
                 border: 0;
                 height: 40px;
-                border-radius: 3px;
+                border-radius: 2px;
                 transition: 0.5s;
+                max-width: 270px;
+                width: 100%;
 
                 &:hover {
                     box-shadow: $shadow;
@@ -54,12 +56,12 @@ main{
         }
 
         img{
-            width: 650px;
+            max-width: 650px;
             display: block;
             margin: 0 auto;
             position: absolute;
             top: 350px;
-            left: calc(50% - 325px);
+            left: 330px;
         }
     }
 }

@@ -39,7 +39,7 @@ header{
                     a{
                         transition: 0.5s;                            
                         font-size: 12px;
-                        color: $head-f-col;
+                        color: $head-font-col;
                         &:hover {
                             @include button(10px 20px, 12px);
                         }

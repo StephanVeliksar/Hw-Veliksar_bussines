@@ -1,9 +1,9 @@
-$head-f-col: #919191;
+$head-font-col: #919191;
 $yellow: #ffbf4d;
 $blue: #709dca;
 $shadow: 0 0 10px rgb(66, 62, 62);
 
-%header_nav_item{
+%header_nav_items{
     color: #fff;
     background-color: $yellow;                                    
     border-radius: 3px;
@@ -14,5 +14,5 @@ $shadow: 0 0 10px rgb(66, 62, 62);
     padding: $butt_padding;
     font-size: $font-s;
     
-    @extend %header_nav_item;
+    @extend %header_nav_items;
 }
